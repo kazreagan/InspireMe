@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    color: white;
+}
+
+/* Wrapper to Center Content */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* Glass Container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    transition: all 0.5s ease;
+}
+
+/* Text Smooth Fade */
+#quote-text, #quote-author {
+    transition: opacity 0.3s ease;
+    display: inline-block;
+}
+
+/* Button Styles */
+button {
+    padding: 12px 24px;
+    border: none;
+    background: rgba(0, 128, 128, 0.8);
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: rgba(255, 127, 80, 0.8);
+}
+
+/* Footer Badge */
+.footer-badge {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.footer-badge svg {
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-badge svg:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 10px #3DDC84);
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (min-width: 768px) {
+    .container {
+        padding: 3rem;
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 4rem;
+        max-width: 700px;
+    }
+}

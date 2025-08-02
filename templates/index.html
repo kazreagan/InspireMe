@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InspireMe</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+   <div class="wrapper">
+    <div class="container">
+        <h1>InspireMe API</h1>
+        <p id="quote-text">Click below to get inspired!</p>
+        <p id="quote-author"></p>
+        <button onclick="fetchQuote()">Inspire Me ✨</button>
+    </div>
+   </div>
+    <!-- flex badge -->
+<footer class="footer-badge">
+    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" viewBox="0 0 200 40">
+      <rect width="200" height="40" rx="20" fill="#2D2D2D"/>
+      <text x="15" y="25" font-family="Arial" font-size="16" fill="#FFFFFF">🧪</text>
+      <text x="35" y="25" font-family="Arial" font-size="14" fill="#FFFFFF">Powered by</text>
+      <text x="115" y="25" font-family="Arial" font-size="14" fill="#3DDC84" font-weight="bold">Flask</text>
+      <text x="150" y="25" font-family="Arial" font-size="14" fill="#FFFFFF">on</text>
+      <text x="170" y="25" font-family="Arial" font-size="16" fill="#3DDC84">🤖</text>
+    </svg>
+</footer>
+
+    <script>
+        function fetchQuote() {
+            fetch('/quote')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('quote-text').innerText = `"${data.quote}"`;
+                    document.getElementById('quote-author').innerText = `- ${data.author}`;
+                });
+        }
+
+            function fetchQuote() {
+        const quoteText = document.getElementById('quote-text');
+        const quoteAuthor = document.getElementById('quote-author');
+
+        // Fade out
+        quoteText.style.opacity = '0';
+        quoteAuthor.style.opacity = '0';
+
+        fetch('/quote')
+            .then(response => response.json())
+            .then(data => {
+                setTimeout(() => {
+                    quoteText.innerText = `"${data.quote}"`;
+                    quoteAuthor.innerText = `- ${data.author}`;
+                    // Fade in
+                    quoteText.style.opacity = '1';
+                    quoteAuthor.style.opacity = '1';
+                }, 300);
+            });
+    }
+
+    </script>
+</body>
+</html>
