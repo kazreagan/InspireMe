@@ -1,11 +1,11 @@
-# 🧪 InspireMe API — Powered by Flask on Android 🤖
+# InspireMe API — Powered by Flask on Android 
 
 Welcome to **InspireMe**, a minimalist **Motivational Quote API & Web App** crafted with **Flask running on Android via Termux**.  
-This project is a showcase of creativity, adaptability, and raw coding energy — built entirely on a mobile device, yet polished for a portfolio.
+This project is a showcase of creativity, adaptability and raw coding energy built entirely on a mobile device yet polished for a portfolio.
 
 ---
 
-## 🌟 Live Features
+## Live Features
 - 🎯 API Endpoint: `/quote` returns a random motivational quote in JSON.
 - ✨ Smooth animated UI that breathes with glassmorphism aesthetics.
 - 📱 Fully responsive design — from mobile screens to large desktops.
@@ -14,7 +14,7 @@ This project is a showcase of creativity, adaptability, and raw coding energy �
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 | Tech        | Usage                        |
 |-------------|------------------------------|
 | **Python**  | Backend logic                |
@@ -26,7 +26,7 @@ This project is a showcase of creativity, adaptability, and raw coding energy �
 
 ---
 
-## ⚡ Installation & Run (On Android via Termux)
+## Installation & Run (On Android via Termux)
 1. **Clone the Repo:**
     ```bash
     git clone <repo-link>
@@ -50,7 +50,7 @@ This project is a showcase of creativity, adaptability, and raw coding energy �
 
 ---
 
-## 📡 API Endpoint Example
+## API Endpoint Example
 **Request:**
   ```json
   {
@@ -59,30 +59,30 @@ This project is a showcase of creativity, adaptability, and raw coding energy �
   }
   ```
 
-# UI Showcase
+## UI Showcase
 A minimalistic frontend that seamlessly integrates with the API. The interface adapts to different sizes, making it a responsive creation.
 
-# Flex Badge
+## Flex Badge
 This project features a custom "Powered by Flask on Android" badge because coding on mobile devices deserves a spotlight.
 
-# Why This Project?
+## Why This Project?
 This isn't just another quote generator. InspireMe is proof that:
-  • You don't need a full workstation to build impactful projects.
-  • Creativity has no platform boundaries.
-  • Mobile first development is very possible.
+  - You don't need a full workstation to build impactful projects.
+  - Creativity has no platform boundaries.
+  - Mobile first development is very possible.
 
-# Portfolio Ready
-  • Screenshot this.
-  • Showcase the live API interaction
-  • Flaunt that termux + flask flex on your personal site
+## Portfolio Ready
+  - Screenshot this
+  - Showcase the live API interaction
+  - Flaunt that termux + flask flex on your personal site
 
-# License
+## License
 MIT License because knowledge is for sharing!
 
-# Let's Connect
+## Let's Connect
 If you've loved this build and the philosophy behind it, let's vibe:
-  • X(Twitter): @UReagan
-  • Behance: @reaganmann
+  - Twitter: @UReagan
+  - Behance: @reaganmann
 
 "Creativity thrives not in comfort but in constraint."
-  ~Mnyamwezi
+  	~Mnyamwezi
